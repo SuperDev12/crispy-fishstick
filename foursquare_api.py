@@ -1,13 +1,14 @@
 import requests
 
-latitude = '12.9716'
-longitude = '77.5946'
+latitude = 12.9716
+longitude = 77.5946
 
-url = f'https://api.foursquare.com/v3/places/search?ll={latitude}%2C{longitude}&query=gym'
+url = f'https://api.foursquare.com/v3/places/nearby?ll={latitude}%2C{longitude}&categories=17069%2C13065%2C18021'
 
-# print(url)
-
-headers = { "accept": "application/json", "Authorization": "fsq37rPHo8Rsa4/EreD4ua+N1giTeAXNiqnS4mmknNtpPm8=" }
+headers = {
+    "accept": "application/json",
+    "Authorization": "fsq37rPHo8Rsa4/EreD4ua+N1giTeAXNiqnS4mmknNtpPm8="
+}
 
 response = requests.get(url, headers=headers)
 
