@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc453269c653f1d625832ec93df75bbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc453269c653f1d625832ec93df75bbf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc453269c653f1d625832ec93df75bbf = L.map(
+                "map_fc453269c653f1d625832ec93df75bbf",
+                {
+                    center: [12.96821, 77.59459],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b5d0900c7e09b6da304421e3b764587 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9b5d0900c7e09b6da304421e3b764587.addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+            var marker_d99827f47f2f5b07e90bb27b21578e05 = L.marker(
+                [12.971592, 77.59426],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_3d641415f4312141213388168c29cd9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c784fa628910d09e6b24f906c37881a = $(`<div id="html_0c784fa628910d09e6b24f906c37881a" style="width: 100.0%; height: 100.0%;">&lt;b&gt;The Square&lt;/b&gt;&lt;br&gt;Category: Coffee Shop&lt;br&gt;Address: 23/2, Ub City Circle (Near UB City), Bangalore 560001, Karnātaka</div>`)[0];
+                popup_3d641415f4312141213388168c29cd9d.setContent(html_0c784fa628910d09e6b24f906c37881a);
+            
+        
+
+        marker_d99827f47f2f5b07e90bb27b21578e05.bindPopup(popup_3d641415f4312141213388168c29cd9d)
+        ;
+
+        
+    
+    
+            var marker_12bdb9041f78703f29213b1df4219501 = L.marker(
+                [12.971656, 77.596425],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_ab8c4b1836a65912c3cfb25e6aab0c27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_449ca12f0f8c404683545f6b7bec50bb = $(`<div id="html_449ca12f0f8c404683545f6b7bec50bb" style="width: 100.0%; height: 100.0%;">&lt;b&gt;OMEGA Boutique&lt;/b&gt;&lt;br&gt;Category: Watch Store&lt;br&gt;Address: 24 Vittal Mallya Road, Kg Halli (Shanthala Nagar, Sampangirama Nagar,), Bangalore 560001, Karnātaka</div>`)[0];
+                popup_ab8c4b1836a65912c3cfb25e6aab0c27.setContent(html_449ca12f0f8c404683545f6b7bec50bb);
+            
+        
+
+        marker_12bdb9041f78703f29213b1df4219501.bindPopup(popup_ab8c4b1836a65912c3cfb25e6aab0c27)
+        ;
+
+        
+    
+    
+            var marker_d78edde6900850f095f1f2c3bacc13d1 = L.marker(
+                [12.971505, 77.594357],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_c3c26455b8671f441baf5b7b68294153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bff5e7417203d2f9b11e5b316d02614 = $(`<div id="html_1bff5e7417203d2f9b11e5b316d02614" style="width: 100.0%; height: 100.0%;">&lt;b&gt;HandM&lt;/b&gt;&lt;br&gt;Category: Clothing Store&lt;br&gt;Address: Thigalarapalya, Hoodi, Bangalore 560067, Karnātaka</div>`)[0];
+                popup_c3c26455b8671f441baf5b7b68294153.setContent(html_1bff5e7417203d2f9b11e5b316d02614);
+            
+        
+
+        marker_d78edde6900850f095f1f2c3bacc13d1.bindPopup(popup_c3c26455b8671f441baf5b7b68294153)
+        ;
+
+        
+    
+    
+            var marker_9769df87985c26dac38f3b02481a3fa6 = L.marker(
+                [12.971701, 77.594225],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_d97cf0cdae46e0bc8c8a401d16de0850 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd2646afe2bb557465d53de644942819 = $(`<div id="html_bd2646afe2bb557465d53de644942819" style="width: 100.0%; height: 100.0%;">&lt;b&gt;Cafe Coffee Day HQ&lt;/b&gt;&lt;br&gt;Category: Office&lt;br&gt;Address: 23/2, Coffee Day Square, Vittal Mallaya Road, Bangalore 560001, Karnātaka</div>`)[0];
+                popup_d97cf0cdae46e0bc8c8a401d16de0850.setContent(html_bd2646afe2bb557465d53de644942819);
+            
+        
+
+        marker_9769df87985c26dac38f3b02481a3fa6.bindPopup(popup_d97cf0cdae46e0bc8c8a401d16de0850)
+        ;
+
+        
+    
+    
+            var marker_258d40ea7952917a9f58f7c4c4ea449f = L.marker(
+                [12.972266, 77.594972],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_d2dd65851a94f592c066eaad2837a970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2d2b9f9690a8abcf6fcd30ae91757f5 = $(`<div id="html_f2d2b9f9690a8abcf6fcd30ae91757f5" style="width: 100.0%; height: 100.0%;">&lt;b&gt;JW Marriott Hotel Bengaluru&lt;/b&gt;&lt;br&gt;Category: Hotel&lt;br&gt;Address: 24/1 Vittal Mallya Road, Bangalore 560001, Karnātaka</div>`)[0];
+                popup_d2dd65851a94f592c066eaad2837a970.setContent(html_f2d2b9f9690a8abcf6fcd30ae91757f5);
+            
+        
+
+        marker_258d40ea7952917a9f58f7c4c4ea449f.bindPopup(popup_d2dd65851a94f592c066eaad2837a970)
+        ;
+
+        
+    
+    
+            var marker_b2381d8835a727bd398464867624166c = L.marker(
+                [12.971673, 77.596055],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_ddc202df78ace41e899f8dc9ad049aa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80b417832e545b20d480c2537a0b83e9 = $(`<div id="html_80b417832e545b20d480c2537a0b83e9" style="width: 100.0%; height: 100.0%;">&lt;b&gt;UB City Tower&lt;/b&gt;&lt;br&gt;Category: Business and Professional Services&lt;br&gt;Address: Ub City, 24, Vittal Mallya Road, Kg Halli, Shanthala Nagar, Sampangi Rama, Bangalore 560001, Karnātaka</div>`)[0];
+                popup_ddc202df78ace41e899f8dc9ad049aa0.setContent(html_80b417832e545b20d480c2537a0b83e9);
+            
+        
+
+        marker_b2381d8835a727bd398464867624166c.bindPopup(popup_ddc202df78ace41e899f8dc9ad049aa0)
+        ;
+
+        
+    
+    
+            var marker_83c37c8e732b4d377ac3b19cbf572326 = L.marker(
+                [12.972244, 77.595082],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var custom_icon_652335922135fdc93d183faf20a988cf = L.icon({"iconSize": [30, 30], "iconUrl": "https://maps.gstatic.com/mapfiles/ms2/micons/orange-dot.png"});
+        marker_83c37c8e732b4d377ac3b19cbf572326.setIcon(custom_icon_652335922135fdc93d183faf20a988cf);
+        
+    
+        var popup_db37eb3472327d33e58dfa96bc0c21f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaeaba1efe709d4886c640b8fc98029a = $(`<div id="html_eaeaba1efe709d4886c640b8fc98029a" style="width: 100.0%; height: 100.0%;">&lt;b&gt;Bengaluru Baking Company&lt;/b&gt;&lt;br&gt;Category: Bakery&lt;br&gt;Address: Jw Marriott, 24/1 (Vittal Mallya Road), Bangalore 560001, Karnātaka</div>`)[0];
+                popup_db37eb3472327d33e58dfa96bc0c21f8.setContent(html_eaeaba1efe709d4886c640b8fc98029a);
+            
+        
+
+        marker_83c37c8e732b4d377ac3b19cbf572326.bindPopup(popup_db37eb3472327d33e58dfa96bc0c21f8)
+        ;
+
+        
+    
+    
+            var marker_b5fb88992ccde7199a40181db68bc49e = L.marker(
+                [12.988728, 77.577294],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_9f4a9f52fc08f39e6c2f1d22017c093d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f2d58500321648d744f78b67e68c90d = $(`<div id="html_2f2d58500321648d744f78b67e68c90d" style="width: 100.0%; height: 100.0%;">&lt;b&gt;Café Coffee Day&lt;/b&gt;&lt;br&gt;Category: Café&lt;br&gt;Address: Nehru Circle (15th cross), Bangalore 560020, Karnātaka</div>`)[0];
+                popup_9f4a9f52fc08f39e6c2f1d22017c093d.setContent(html_2f2d58500321648d744f78b67e68c90d);
+            
+        
+
+        marker_b5fb88992ccde7199a40181db68bc49e.bindPopup(popup_9f4a9f52fc08f39e6c2f1d22017c093d)
+        ;
+
+        
+    
+    
+            var marker_9dbb867cbee51dddb4c23a1685f29105 = L.marker(
+                [12.964611, 77.606941],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_f38d839462f91946fb49ad13e5837efc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec01870ab308f66e7b5477cf8a22c457 = $(`<div id="html_ec01870ab308f66e7b5477cf8a22c457" style="width: 100.0%; height: 100.0%;">&lt;b&gt;Lifestyle Stores&lt;/b&gt;&lt;br&gt;Category: Department Store&lt;br&gt;Address: W 76, Door 1, Adarsh Opus, Campbell Road (Austin Town), Bangalore 560047, Karnātaka</div>`)[0];
+                popup_f38d839462f91946fb49ad13e5837efc.setContent(html_ec01870ab308f66e7b5477cf8a22c457);
+            
+        
+
+        marker_9dbb867cbee51dddb4c23a1685f29105.bindPopup(popup_f38d839462f91946fb49ad13e5837efc)
+        ;
+
+        
+    
+    
+            var marker_b5f8ec36e25fb5c673ff946b78296198 = L.marker(
+                [12.972263, 77.595832],
+                {}
+            ).addTo(map_fc453269c653f1d625832ec93df75bbf);
+        
+    
+        var popup_c31407a497ac4388bb23aa45618b8808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67c355083f74f3936493b07a4bc427ca = $(`<div id="html_67c355083f74f3936493b07a4bc427ca" style="width: 100.0%; height: 100.0%;">&lt;b&gt;Farzi Cafe&lt;/b&gt;&lt;br&gt;Category: Bistro&lt;br&gt;Address: Ub City (Vittal Mallya Road), Bangalore, Karnātaka</div>`)[0];
+                popup_c31407a497ac4388bb23aa45618b8808.setContent(html_67c355083f74f3936493b07a4bc427ca);
+            
+        
+
+        marker_b5f8ec36e25fb5c673ff946b78296198.bindPopup(popup_c31407a497ac4388bb23aa45618b8808)
+        ;
+
+        
+    
+</script>
+</html>
