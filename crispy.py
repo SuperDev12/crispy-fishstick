@@ -1,8 +1,7 @@
-import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.impute import SimpleImputer
-
+import pandas as pd
+import matplotlib.pyplot as plt
 # Read the dataset
 codebook_df = pd.read_csv('/Users/superdev/Downloads/food_coded.csv')
 
